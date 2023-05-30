@@ -1,4 +1,5 @@
-import { Container } from './style';
+import React from 'react';
+import { Container } from './styled';
 
 export function Header() {
   return (

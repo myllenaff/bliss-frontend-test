@@ -18,8 +18,7 @@ export const Container = styled.header`
   > div {
     display: flex;
     align-items: center;
-    font-size: 30px;
-    
+    font-size: 30px; 
   }
 
 `;
