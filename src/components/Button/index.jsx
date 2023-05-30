@@ -1,10 +1,14 @@
-import { Container } from './styles';
+import React from 'react';
+import { Container } from './styled';
 
-export function Button() {
+export function Button({ title, ...rest }) {
 
   return (
-    <Container type="button">
-      Show more
+    <Container
+      type="button"
+      {...rest}
+    >
+      {title}
 
     </Container>
   );
