@@ -17,7 +17,14 @@ export const SectionHome = styled.div`
 `;
 
 export const Search = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   padding: 64px 64px 0;
+`;
+
+export const ButtonSearchTop = styled.div`
+  margin-left: 20px;
 `;
 
 export const QuestionsList = styled.div`
