@@ -19,19 +19,19 @@ export const ContentDetails = styled.div`
   flex-direction: column;
   max-width: 800px;
   margin: 0 auto;
-  height:100%;
+  height: 100%;
   gap: 10px;
 `;
 
 export const ShareButtonContainer = styled.div`
-    display: flex;
-    width:100%;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 `;
 
 export const QuestionDetailsWrapper = styled.div`
   display: flex;
-  background-color: ${({theme}) => theme.COLORS.BACKGROUND_700 };
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
   flex-direction: column;
   padding: 12px 20px;
   border-radius: 10px;
@@ -41,7 +41,7 @@ export const QuestionDetailsWrapper = styled.div`
   justify-content: space-evenly;
 
   & > p {
-    font-size: 20px
+    font-size: 20px;
   }
 `;
 
@@ -60,9 +60,8 @@ export const VotingArea = styled.div`
   }
 `;
 
-
 export const DateInfo = styled.div`
   display: inline-flex;
   gap: 10px;
-  align-items: center
-`
+  align-items: center;
+`;

@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { RiErrorWarningLine } from 'react-icons/ri';
-
 import { ContainerError } from './styled';
 import { Button } from '../../components/Button';
 
@@ -11,7 +11,9 @@ export function ErrorPage() {
 
       <p>Ooops.. Page not found..</p>
 
-      <Button title='Back Home' />
+      <Link to={'/'}>
+        <Button title='Back Home' />
+      </Link>
     </ContainerError>
   );
 }
