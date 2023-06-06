@@ -2,12 +2,11 @@ import React from 'react';
 
 import { StyledButtonVote } from './styled';
 
-
-export function ButtonVote({ text, value }) {
+export function ButtonVote({ text, value, ...props }) {
   return (
-    <StyledButtonVote>
+    <StyledButtonVote type='button' {...props}>
       <span>{text}</span>
       <span>{value}</span>
     </StyledButtonVote>
-  )
+  );
 }

@@ -1,20 +1,27 @@
 import styled, { css } from 'styled-components';
 
-export const QuestionContainer = styled.div`
+export const QuestionContainer = styled.button`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 140px;
+  height: 100%;
   border-radius: 10px;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-  padding: 12px 20px;
   gap: 16px;
+  border: none;
+  padding-right: 16px;
+
+  & img {
+    border-radius: 10px 0 0 10px;
+  }
 `;
 
 export const QuestionInfos = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 18px;
+  color: ${({ theme }) => theme.COLORS.WHITE};
 
   height: 100%;
   width: 100%;
@@ -25,6 +32,7 @@ export const QuestionOptions = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 30px;
+  gap: 10px;
 
   width: 100%;
 `;
@@ -32,7 +40,9 @@ export const QuestionOptions = styled.div`
 export const QuestionOption = styled.span`
   color: #000;
   padding: 8px;
+  width: 100%;
   border-radius: 10px;
+  padding: 10px 0;
 
   ${({ theme }) => css`
     background-color: ${theme.COLORS.GRAY_50};

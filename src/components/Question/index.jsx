@@ -10,7 +10,7 @@ import {
   QuestionHeader,
 } from './styled';
 
-export function Question() {
+export default function Question({ id, title, choices, image }) {
   const navigate = useNavigate();
 
   function handleNavigate() {
@@ -19,20 +19,16 @@ export function Question() {
 
   return (
     <QuestionContainer onClick={handleNavigate}>
-      <img
-        src='https://dummyimage.com/120x120/000/fff.png&text=question+1+image+(120x120)'
-        alt=''
-      />
+      <img src={image} alt={`image-list-${id}`} />
       <QuestionHeader>
         <QuestionInfos>
-          <p>Titulo da questão</p>
+          <p>{title}</p>
         </QuestionInfos>
 
         <QuestionOptions>
-          <QuestionOption>opcao</QuestionOption>
-          <QuestionOption>opcao</QuestionOption>
-          <QuestionOption>opcao</QuestionOption>
-          <QuestionOption>opcao</QuestionOption>
+          {choices.map((option, index) => (
+            <QuestionOption key={index}>{option.choice}</QuestionOption>
+          ))}
         </QuestionOptions>
       </QuestionHeader>
     </QuestionContainer>
