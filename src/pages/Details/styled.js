@@ -3,10 +3,8 @@ import styled from 'styled-components';
 export const ContainerDetails = styled.div`
   display: flex;
   flex-direction: column;
-
   width: 100%;
   height: 100vh;
-
   gap: 32px;
 
   & img {
@@ -41,7 +39,7 @@ export const QuestionDetailsWrapper = styled.div`
   justify-content: space-evenly;
 
   & > p {
-    font-size: 20px;
+    font-size: 26px;
   }
 `;
 
@@ -64,4 +62,25 @@ export const DateInfo = styled.div`
   display: inline-flex;
   gap: 10px;
   align-items: center;
+`;
+
+export const VoteModalContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: #ff9000;
+  width: 300px;
+  height: 200px;
+`;
+
+export const CloseModalButton = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: none;
+  background-color: #ff9000;
 `;
